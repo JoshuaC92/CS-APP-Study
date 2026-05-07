@@ -1,0 +1,11 @@
+# Build artifacts
+*.o
+*.a
+*.so
+
+# Compiled binaries (no extension on Linux)
+ch02-representing-and-manipulating-information/**/byte_rep
+
+# General
+*.out
+core
