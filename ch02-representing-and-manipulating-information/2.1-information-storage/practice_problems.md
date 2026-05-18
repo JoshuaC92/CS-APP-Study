@@ -35,5 +35,31 @@
         The most significant bits do not match.
 
 # 2.7:
-x'6D 6E 6F 70 71 72'
+    x'6D 6E 6F 70 71 72'
+
+# 2.8:
+    0100 1110
+    1110 0001
+
+  ~ 1011 0001
+  ~ 0001 1110
+
+  & 0100 0000
+  | 1110 1111
+  ^ 1010 1111
+
+
+# 2.9:
+
+  A.
+      BLACK   ->  WHITE
+      BLUE    ->  YELLOW
+      GREEN   ->  MAGENTA
+      CYAN    ->  RED
+
+  B.
+      CYAN
+      GREEN
+      BLUE
+
 
