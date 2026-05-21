@@ -8,6 +8,7 @@
       B: L-x'7856'   B-x'1234'
       C: L-x'785634' B-x'123456'
 
+
 # 2.6:
   int   x = 2607352    (x'00 27 C8 F8)
   float y = 3510593.0  (x'4A 1F 23 E0)
@@ -34,8 +35,10 @@
     C.  
         The most significant bits do not match.
 
+
 # 2.7:
     x'6D 6E 6F 70 71 72'
+
 
 # 2.8:
     0100 1110
@@ -63,3 +66,35 @@
       BLUE
 
 
+# 2.10:
+
+```c
+  void inplace_swap(int *x, int *y){
+        *y = *x ^ *y;
+        *x = *x ^ *y;
+        *y = *x ^ *y;
+  }
+```
+
+     *x           | *y
+    ---------------------
+     a            | b
+    ---------------------
+  1  a            | a ^ b
+  2  a ^ (a ^ b)  | a ^ b
+  3  a ^ (a ^ b)  | a ^ (a ^ b) ^ (a ^ b)
+
+  In step 2, and given that the ^ (xor) is commutative and associative we can apply the rule that x ^ x = 0, so these steps could be simplified to:
+
+    2. b, a^b
+    3. b, a  (the a and b pairs cancel out, leaving us with a lone a)
+
+
+# 2.11:
+
+  A. They will both point to the same array member, and therefore be the same number.
+  B. When you xor anything with itself it becomes 0
+  C. Add a compare and clause for values a[first] and a[last] and if they are identical leave the values alone.  OR if the array is just assending then change the <= operator to simply <.
+
+
+# 2.12:
