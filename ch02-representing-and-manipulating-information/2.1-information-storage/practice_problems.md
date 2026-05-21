@@ -90,7 +90,17 @@
     3. b, a  (the a and b pairs cancel out, leaving us with a lone a)
 
 
-# 2.11:
+# 2.11: 
+
+```c
+void reverse_array(int a[], int cnt){
+    int first,last;
+    for (first=0, last=cnt-1;
+         first<=last;
+         first++,last--)
+          inplace_swap(&a[first],&a[last]);
+}
+```
 
   A. They will both point to the same array member, and therefore be the same number.
   B. When you xor anything with itself it becomes 0
