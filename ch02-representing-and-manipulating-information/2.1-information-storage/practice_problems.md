@@ -108,3 +108,8 @@ void reverse_array(int a[], int cnt){
 
 
 # 2.12:
+```
+    A.  int x = x & 0xFF;
+    B.  int x = (x & ~0) & ~(x & 0xFF)
+    C.  int x = (x & ~0)
+```
