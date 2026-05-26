@@ -106,8 +106,6 @@ void reverse_array(int a[], int cnt){
 # 2.13:
   *See sources code devax.c*
 
-
-
 # 2.14:
   a = 0x55 0101 0101- 
   b = 0x46 0100 0110
@@ -120,6 +118,26 @@ void reverse_array(int a[], int cnt){
                     !a||!b = 0x00
     a & !b = 0x00
                     a &&~b = 0x01
+
+# 2.15:
+  x = 0110 1010
+  y = 1100 1011
+  
+  x & y = 0100 1010
+  x | y = 1110 1011
+  x ^ y = 1010 0001
+
+
+  x = 0110 1100 
+  y = 0110 1100
+
+  x & y = 0110 1100
+  x | y = 0110 1100
+  x ^ y = 0000 0000
+
+  !(x ^ y)
+
+
 
 
 
