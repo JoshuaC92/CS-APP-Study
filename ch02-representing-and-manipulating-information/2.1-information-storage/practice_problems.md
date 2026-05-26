@@ -103,5 +103,26 @@ void reverse_array(int a[], int cnt){
 # 2.12:
   *See source code compare.c*
 
-# 2.13
+# 2.13:
   *See sources code devax.c*
+
+
+
+# 2.14:
+  a = 0x55 0101 0101- 
+  b = 0x46 0100 0110
+
+    a &  b = 0x44
+                    a && b = 0x01
+    a |  b = 0x57
+                    a || b = 0x01
+    ~a| ~b = 0xBB
+                    !a||!b = 0x00
+    a & !b = 0x00
+                    a &&~b = 0x01
+
+
+
+
+
+
