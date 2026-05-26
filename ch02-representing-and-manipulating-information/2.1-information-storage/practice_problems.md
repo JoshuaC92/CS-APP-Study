@@ -137,7 +137,16 @@ void reverse_array(int a[], int cnt){
 
   !(x ^ y)
 
+# 2.16:
+ 
+                                    (Logical)         (Arithmatic)
+    a               a<<2            a>>3              a>>3
+   0xD4 11010100    01010000 0x50   00011010 0x1A     11111010 0xFA
+   0x64 01100100    10010000 0x90   00001100 0x0C     00001100 0xEC
+   0x72 01110010    11001000 0xC8   00001110 0x0E     00011110 0x1E
+   0x44 01000100    00010000 0x10   00001000 0x08     00001000 0x08
 
+  *Apparently the solution in the text book for this is incorrect, so i will write a C code to confirm what the answers actualy are using the byte pointer function
 
 
 
