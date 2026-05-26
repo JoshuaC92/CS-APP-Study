@@ -8,7 +8,6 @@
       B: L-x'7856'   B-x'1234'
       C: L-x'785634' B-x'123456'
 
-
 # 2.6:
   int   x = 2607352    (x'00 27 C8 F8)
   float y = 3510593.0  (x'4A 1F 23 E0)
@@ -35,10 +34,8 @@
     C.  
         The most significant bits do not match.
 
-
 # 2.7:
     x'6D 6E 6F 70 71 72'
-
 
 # 2.8:
     0100 1110
@@ -50,7 +47,6 @@
   & 0100 0000
   | 1110 1111
   ^ 1010 1111
-
 
 # 2.9:
 
@@ -64,7 +60,6 @@
       CYAN
       GREEN
       BLUE
-
 
 # 2.10:
 
@@ -89,7 +84,6 @@
     2. b, a^b
     3. b, a  (the a and b pairs cancel out, leaving us with a lone a)
 
-
 # 2.11: 
 
 ```c
@@ -106,10 +100,8 @@ void reverse_array(int a[], int cnt){
   B. When you xor anything with itself it becomes 0
   C. Add a compare and clause for values a[first] and a[last] and if they are identical leave the values alone.  OR if the array is just assending then change the <= operator to simply <.
 
-
 # 2.12:
-```
-    A.  int x = x & 0xFF;
-    B.  int x = (x & ~0) & ~(x & 0xFF)
-    C.  int x = (x & ~0)
-```
+  *See source code compare.c*
+
+# 2.13
+  *See sources code devax.c*
