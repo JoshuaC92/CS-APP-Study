@@ -146,7 +146,7 @@ void reverse_array(int a[], int cnt){
    0x72 01110010    11001000 0xC8   00001110 0x0E     00011110 0x1E
    0x44 01000100    00010000 0x10   00001000 0x08     00001000 0x08
 
-  *Apparently the solution in the text book for this is incorrect, so i will write a C code to confirm what the answers actualy are using the byte pointer function
+  *Apparently the solution in the text book for this is incorrect, so i will write a C code to confirm what the answers actualy are using the byte pointer function*
 
 
 
